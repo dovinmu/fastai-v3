@@ -9,10 +9,11 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+export_file_url = 'https://github.com/dovinmu/fastai/raw/master/elton/export.pkl'
 export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['2000_elton', '2010s_elton', '90s_elton', 'late_80s_elton', 'early_80s_elton',
+          'late_70s_elton', 'early_70s_elton', 'teenager_elton']
 path = Path(__file__).parent
 
 app = Starlette()
